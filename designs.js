@@ -15,8 +15,9 @@ function clearGrid() {
     table.empty();
 }
 
-function whenMouseOverOnGrid() {
-    $(this).text("1");
+function whenMouseClickOnGrid() {
+    const color = $("#colorPicker").val();
+    $(this).css("background-color", color);
 }
 
 function makeGrid() {
@@ -31,7 +32,10 @@ function makeGrid() {
 
         for (let col = 0; col < width; col++) {
             const newCol = $("<th></th>");
-            newCol.on("click", whenMouseOverOnGrid);
+            newCol.css("width", "20px");
+            newCol.css("height", "20px");
+            newCol.css("border", "1px solid black");
+            newCol.on("click", whenMouseClickOnGrid);
             newTr.append(newCol);
         }
 
