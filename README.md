@@ -1,16 +1,15 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+![GitHub Logo](/preview.png)
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## About this Project
+This project is done part of assignments given by Udacity in Front End Web Development Nano-degree program.
+- It provides simple interfaces including...
+ - Two text inputs to set grid's width and height.
+ - Submit button to draw the grid
+ - Color palette to set current brush color
 
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+- Once the grid is drawn...
+ - You can simply click each tile of the grid to fill the chosen color
+ - You can change color
+ - When submit button is clicked, a new grid will be drawn, and the past grid will be gone.
